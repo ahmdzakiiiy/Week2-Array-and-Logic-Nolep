@@ -3,10 +3,10 @@ function pasanganTerbesar(num) {
   let angka = String(num);
   let max = 0;
 
-  for (let i = 0; i < angka.length -1; i++) {
+  for (let i = 0; i < angka.length - 1; i++) {
     let pasanganAngka = Number(angka.slice(i, i + 2), 10);
-    
-    if (pasanganAngka > max) {
+
+    if (pasanganAngka > max) {  
       max = pasanganAngka;
     }
   }

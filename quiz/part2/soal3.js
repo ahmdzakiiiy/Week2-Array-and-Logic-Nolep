@@ -1,7 +1,7 @@
 function hitungJumlahKata(kalimat) {
   // you can only write your code here!
   let kata = 1;
-  
+
   for (let i = 0; i < kalimat.length; i++) {
     if (kalimat[i] == " ") {
       kata += 1;
