@@ -1,11 +1,12 @@
 //tentukan apakah ini deret aritmatika atau bukan
 function tentukanDeretAritmatika(arr) {
   // you can only write your code here!
-  a = arr[1] - arr[0]
-  for (let i = 0; i < arr.length; i++) {
-    
+
+  a = arr[1] - arr[0];
+  for (let i = 1; i < arr.length - 1; i++) {
+    if (arr[i] - arr[i - 1] !== a) return false;
   }
-  
+  return true;
 }
 
 // TEST CASES
